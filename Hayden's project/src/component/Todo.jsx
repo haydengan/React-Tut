@@ -1,7 +1,7 @@
 import { MdDelete, MdEdit } from "react-icons/md";
 import EditForm from "./Editform";
 
-function Todo({ todo, deleteTodo, toggleCompleted, toggleIsEditing, editTodo }) { //properties
+function Todo({ todo, deleteTodo, toggleCompleted, toggleIsEditin, editTodo }) { //properties
   return todo.isEditing ? ( //isEditing? if yes call EditForm
     <EditForm todo={todo} editTodo={editTodo}/> //pass todo data and editTodo data
   ) : ( //shows task items
